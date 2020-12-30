@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 style="color: white"><center>Responsive Contact Section</center></h2>
+<body style="background-color:#2471A3 ;"></body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us:</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <html>
+    <head>
+        <title>
+            help page
+        </title>
+    </head>
+    <body>
+        <div>
+        <h2>Help page</h2>
+        </div>
+        <p>
+            If your issue is not solved or you have any other problems:
+        </p><br>
+        <p> <b>Contact Info: </b></p><br>
+        <p>Ph no:<u>8878672987</u></p><br>
+        <p>Ph no:<u>9689579867</u></p><br>
+        <p>e-mail:<u>vignanViit@gmail.com</u></p>
+    </body>
+</html>
+    </div>
+    <div class="column">
+      <form action="help.php" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Your last name..">
+        </select>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Write something.." style="height:170px">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
